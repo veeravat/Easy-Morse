@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CA88BDD1FCB36FA00FFC1EA /* MorseGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88BDC1FCB36FA00FFC1EA /* MorseGen.swift */; };
+		3CA88BDF1FCCAD9F00FFC1EA /* morseShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88BDE1FCCAD9F00FFC1EA /* morseShow.swift */; };
 		A1A6EAA71FC47CC60098B132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A6EAA61FC47CC60098B132 /* AppDelegate.swift */; };
 		A1A6EAA91FC47CC60098B132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A6EAA81FC47CC60098B132 /* ViewController.swift */; };
 		A1A6EAAC1FC47CC60098B132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A6EAAA1FC47CC60098B132 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3CA88BDC1FCB36FA00FFC1EA /* MorseGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseGen.swift; sourceTree = "<group>"; };
+		3CA88BDE1FCCAD9F00FFC1EA /* morseShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morseShow.swift; sourceTree = "<group>"; };
 		A1A6EAA31FC47CC60098B132 /* morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A6EAA61FC47CC60098B132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1A6EAA81FC47CC60098B132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				A1A6EAA81FC47CC60098B132 /* ViewController.swift */,
 				A1A6EAAA1FC47CC60098B132 /* Main.storyboard */,
 				A1A6EAAD1FC47CC60098B132 /* Assets.xcassets */,
+				3CA88BDE1FCCAD9F00FFC1EA /* morseShow.swift */,
 				3CA88BDC1FCB36FA00FFC1EA /* MorseGen.swift */,
 				A1A6EAAF1FC47CC60098B132 /* LaunchScreen.storyboard */,
 				A1A6EAB21FC47CC60098B132 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA88BDD1FCB36FA00FFC1EA /* MorseGen.swift in Sources */,
+				3CA88BDF1FCCAD9F00FFC1EA /* morseShow.swift in Sources */,
 				A1A6EAA91FC47CC60098B132 /* ViewController.swift in Sources */,
 				A1A6EAA71FC47CC60098B132 /* AppDelegate.swift in Sources */,
 			);

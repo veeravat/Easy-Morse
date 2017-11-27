@@ -33,6 +33,9 @@ class MorseGen: UIViewController {
             morse = textToMorse(lang: true, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
         }
         TXT_input.text = morse
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseShow") as! morseShow
+        vc.morseCode = morse
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func clearTxT(_ sender: Any) {
