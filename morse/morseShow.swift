@@ -27,13 +27,13 @@ class morseShow: UIViewController {
             for (index2,char) in chars.enumerated(){
                 if char == "0"{
                     //play
-                    delay(0.5*morseDelay) {
+                    delay(morseDelay) {
                         print("On 0.5 Sec")
                         self.toggleTorch(on: true)
                     }
                     morseDelay += stdDelay["dot"]!
                     //pause
-                    delay(0.5*morseDelay) {
+                    delay(morseDelay) {
                         print("Off 0.5 Sec")
                         self.toggleTorch(on: false)
                     }
@@ -41,13 +41,13 @@ class morseShow: UIViewController {
                 }
                 if char == "1"{
                     //play
-                    delay(0.5*morseDelay) {
+                    delay(morseDelay) {
                         print("On 1.5 Sec")
                         self.toggleTorch(on: true)
                     }
                     morseDelay += stdDelay["dash"]!
                     //pause
-                    delay(0.5*morseDelay) {
+                    delay(morseDelay) {
                         print("Off 0.5 Sec")
                         self.toggleTorch(on: false)
                     }
@@ -55,7 +55,7 @@ class morseShow: UIViewController {
                 }
 
                 if index1 == (morse.count - 1)&&index2==(chars.count - 1){
-                    delay(0.25*morseDelay) {
+                    delay(morseDelay) {
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseGen") as! MorseGen
                         self.present(vc, animated: true, completion: nil)
                     }

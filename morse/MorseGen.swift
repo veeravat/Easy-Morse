@@ -23,9 +23,44 @@ class MorseGen: UIViewController {
     @IBOutlet weak var TXT_output: UITextView!
     @IBOutlet weak var morseLang: UISegmentedControl!
     @IBOutlet weak var TXT_input: UITextField!
+    var TXT_inputR = ""
+    var TXT_outputR = ""
+    var morse : String = ""
+    @IBAction func Flash(_ sender: Any) {
+        
+    }
+    @IBAction func addFav(_ sender: Any) {
+        if morseLang.selectedSegmentIndex == 0{
+            //Thai
+            morse = textToMorse(lang: false, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
+        }else{
+            //Eng
+            morse = textToMorse(lang: true, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
+        }
+        let DB = SQLiteDB.shared
+        DB.openDB()
+        let str:String = "INSERT INTO favorite(text,code) VALUES('\(TXT_input.text!)','\(morse)')"
+        let data = DB.query(sql: str)
+        print(data)
+    }
+    
+    @IBAction func Screen(_ sender: Any) {
+        if morseLang.selectedSegmentIndex == 0{
+            //Thai
+            morse = textToMorse(lang: false, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
+        }else{
+            //Eng
+            morse = textToMorse(lang: true, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
+        }
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseShow") as! morseShow
+        vc.morseCode = morse
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     @IBAction func toMorse(_ sender: Any) {
-        var morse : String = ""
+        
         if morseLang.selectedSegmentIndex == 0{
             //Thai
             morse = textToMorse(lang: false, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
@@ -34,13 +69,11 @@ class MorseGen: UIViewController {
             morse = textToMorse(lang: true, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
         }
         TXT_output.text = morseToCode(morse: morse)
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseShow") as! morseShow
-        vc.morseCode = morse
-//        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func clearTxT(_ sender: Any) {
         TXT_input.text = ""
+        TXT_output.text = ""
     }
     
     func morseToCode(morse:String) -> String {
@@ -89,6 +122,14 @@ class MorseGen: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true) //This will hide the keyboard
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        TXT_input.text = TXT_inputR
+        TXT_output.text = TXT_outputR
+        self.reloadInputViews()
+        
     }
 
 

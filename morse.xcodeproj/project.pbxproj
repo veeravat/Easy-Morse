@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C246F6C1FCDE9D000327CFC /* MobileApp.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3C246F6B1FCDE9D000327CFC /* MobileApp.sqlite */; };
+		3C246F6E1FCDE9F900327CFC /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C246F6D1FCDE9F800327CFC /* SQLiteDB.swift */; };
+		3C246F731FCDEA1D00327CFC /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C246F701FCDEA1C00327CFC /* Bridge.m */; };
+		3C246F751FCDF07400327CFC /* showFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C246F741FCDF07400327CFC /* showFavorite.swift */; };
+		3C246F771FCE017B00327CFC /* viewFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C246F761FCE017B00327CFC /* viewFavorite.swift */; };
 		3CA88BDD1FCB36FA00FFC1EA /* MorseGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88BDC1FCB36FA00FFC1EA /* MorseGen.swift */; };
 		3CA88BDF1FCCAD9F00FFC1EA /* morseShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA88BDE1FCCAD9F00FFC1EA /* morseShow.swift */; };
 		A1A6EAA71FC47CC60098B132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A6EAA61FC47CC60098B132 /* AppDelegate.swift */; };
@@ -27,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C246F6B1FCDE9D000327CFC /* MobileApp.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = MobileApp.sqlite; path = "../../../../../Volumes/Data/desktop/lab mobile/MobileApp.sqlite"; sourceTree = "<group>"; };
+		3C246F6D1FCDE9F800327CFC /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = "../../../../../Volumes/Data/desktop/lab mobile/inclass-w12/inclass-w11/SQLiteDB.swift"; sourceTree = "<group>"; };
+		3C246F6F1FCDEA1C00327CFC /* morse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "morse-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C246F701FCDEA1C00327CFC /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bridge.m; path = "../../../../../Volumes/Data/desktop/lab mobile/inclass-w12/inclass-w11/Bridge.m"; sourceTree = "<group>"; };
+		3C246F711FCDEA1C00327CFC /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = "../../../../../Volumes/Data/desktop/lab mobile/inclass-w12/inclass-w11/Bridge.h"; sourceTree = "<group>"; };
+		3C246F721FCDEA1D00327CFC /* inclass-w11-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "inclass-w11-Bridging-Header.h"; path = "../../../../../Volumes/Data/desktop/lab mobile/inclass-w12/inclass-w11/inclass-w11-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C246F741FCDF07400327CFC /* showFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showFavorite.swift; sourceTree = "<group>"; };
+		3C246F761FCE017B00327CFC /* viewFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewFavorite.swift; sourceTree = "<group>"; };
 		3CA88BDC1FCB36FA00FFC1EA /* MorseGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseGen.swift; sourceTree = "<group>"; };
 		3CA88BDE1FCCAD9F00FFC1EA /* morseShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morseShow.swift; sourceTree = "<group>"; };
 		A1A6EAA31FC47CC60098B132 /* morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,12 +94,20 @@
 				A1A9E0971FCD0504001AD68D /* img */,
 				A1A6EAA61FC47CC60098B132 /* AppDelegate.swift */,
 				A1A6EAA81FC47CC60098B132 /* ViewController.swift */,
+				3C246F711FCDEA1C00327CFC /* Bridge.h */,
+				3C246F701FCDEA1C00327CFC /* Bridge.m */,
+				3C246F721FCDEA1D00327CFC /* inclass-w11-Bridging-Header.h */,
 				A1A6EAAA1FC47CC60098B132 /* Main.storyboard */,
+				3C246F741FCDF07400327CFC /* showFavorite.swift */,
 				A1A6EAAD1FC47CC60098B132 /* Assets.xcassets */,
 				3CA88BDE1FCCAD9F00FFC1EA /* morseShow.swift */,
 				3CA88BDC1FCB36FA00FFC1EA /* MorseGen.swift */,
 				A1A6EAAF1FC47CC60098B132 /* LaunchScreen.storyboard */,
+				3C246F6D1FCDE9F800327CFC /* SQLiteDB.swift */,
 				A1A6EAB21FC47CC60098B132 /* Info.plist */,
+				3C246F6B1FCDE9D000327CFC /* MobileApp.sqlite */,
+				3C246F761FCE017B00327CFC /* viewFavorite.swift */,
+				3C246F6F1FCDEA1C00327CFC /* morse-Bridging-Header.h */,
 			);
 			path = morse;
 			sourceTree = "<group>";
@@ -172,6 +193,7 @@
 				A1A9A7AF1FCD236100F2E550 /* eng.jpg in Resources */,
 				A1A9A7B01FCD236100F2E550 /* thai.jpg in Resources */,
 				A1A9A7A71FCD0D8100F2E550 /* pencil.png in Resources */,
+				3C246F6C1FCDE9D000327CFC /* MobileApp.sqlite in Resources */,
 				A1A9A7A91FCD0D8600F2E550 /* open-book.png in Resources */,
 				A1A9A7A51FCD0CBD00F2E550 /* morse-code-2.png in Resources */,
 				A1A9A7A11FCD09DC00F2E550 /* tap.png in Resources */,
@@ -192,9 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C246F771FCE017B00327CFC /* viewFavorite.swift in Sources */,
 				3CA88BDD1FCB36FA00FFC1EA /* MorseGen.swift in Sources */,
 				3CA88BDF1FCCAD9F00FFC1EA /* morseShow.swift in Sources */,
+				3C246F6E1FCDE9F900327CFC /* SQLiteDB.swift in Sources */,
 				A1A6EAA91FC47CC60098B132 /* ViewController.swift in Sources */,
+				3C246F731FCDEA1D00327CFC /* Bridge.m in Sources */,
+				3C246F751FCDF07400327CFC /* showFavorite.swift in Sources */,
 				A1A6EAA71FC47CC60098B132 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,12 +344,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A6A87GVLBR;
 				INFOPLIST_FILE = morse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.freedom.normal.morse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "morse/morse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -333,12 +362,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A6A87GVLBR;
 				INFOPLIST_FILE = morse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.freedom.normal.morse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "morse/morse-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
