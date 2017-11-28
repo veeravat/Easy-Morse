@@ -20,6 +20,7 @@ class MorseGen: UIViewController {
     let thai : [String : String] = [ "ก" : "110", "ข" : "1010", "ฃ" : "1010", "ค" : "101", "ฅ" : "101", "ฆ" : "101", "ง" : "10110", "จ" : "10010", "ฉ" : "1111", "ช" : "1001", "ฌ" : "1001", "ซ" : "1100", "ญ" : "0111", "ด" : "100", "ฎ" : "100", "ต" : "1", "ฏ" : "1", "ถ" : "10100", "ฐ" : "10100", "ท" : "10011", "ธ" : "10011", "ฑ" : "10011", "ฒ" : "10011", "น" : "10", "ณ" : "10", "บ" : "1000", "ป" : "0110", "ผ" : "1101", "ฝ" : "10101", "พ" : "01100", "ภ" : "01100", "ฟ" : "0010", "ม" : "11", "ย" : "1011", "ร" : "010", "ล" : "0100", "ฬ" : "0100", "ว" : "011", "ศ" : "000", "ษ" : "000", "ส" : "000", "ห" : "0000", "อ" : "10001", "ฮ" : "11011", "ฤ" : "01011", "ฤา" : "01011", "ะ" : "01000", "า" : "01", "ิ" : "00100", "ี" : "00", "ึ" : "00110", "ื" : "0011", "ุ" : "00101", "ู" : "1110", "เ" : "0", "แ" : "0101", "ไ" : "01001", "ใ" : "01001", "โ" : "111", "ำ" : "00010", "่" : "001", "้" : "0001", "๊" : "11000", "๋" : "01010","ั" : "01101", "็" : "11100", "์" : "11001", "ๆ" : "10111", "ฯ" : "11010", "ฯลฯ" : "11101"]
     let num : [String : String] = ["1" : "01111", "2" : "00111", "3" : "00011", "4" : "00001", "5" : "00000", "6" : "10000", "7" : "11000", "8" : "11100", "9" : "11110", "0" : "11111"," ":"-"]
 
+    @IBOutlet weak var TXT_output: UITextView!
     @IBOutlet weak var morseLang: UISegmentedControl!
     @IBOutlet weak var TXT_input: UITextField!
     
@@ -32,14 +33,22 @@ class MorseGen: UIViewController {
             //Eng
             morse = textToMorse(lang: true, rawText: TXT_input.text!.trimmingCharacters(in: .whitespaces))
         }
-        TXT_input.text = morse
+        TXT_output.text = morseToCode(morse: morse)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseShow") as! morseShow
         vc.morseCode = morse
-        self.present(vc, animated: true, completion: nil)
+//        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func clearTxT(_ sender: Any) {
         TXT_input.text = ""
+    }
+    
+    func morseToCode(morse:String) -> String {
+        
+        let reSpace = morse.replacingOccurrences(of: "-", with: "  ")
+        let reOnce = reSpace.replacingOccurrences(of: "1", with: "- ")
+        let reZero = reOnce.replacingOccurrences(of: "0", with: ". ")
+        return reZero
     }
     
     func textToMorse(lang:Bool,rawText:String) -> String {

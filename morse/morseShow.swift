@@ -8,31 +8,84 @@
 
 import UIKit
 import AVFoundation
+import Foundation
+
 class morseShow: UIViewController {
     var morseCode = ""
+    var morseDelay: Double = 0
+    let stdDelay : [String: Double] = [ "dot" : 1, "dash" : 3, "inEle" : 1, "shoGap" : 3, "medGap" : 7]
     override func viewDidLoad() {
         super.viewDidLoad()
-        for i in 1...10{
-            delay(2 * Double(i)) {
-                if (i % 2) == 0 {
-                    print("On")
-                    self.toggleTorch(on: true)
-                }else{
-                    print("Off")
-                    self.toggleTorch(on: false)
+        
+        print(morseCode)
+        var morse = morseCode.components(separatedBy: "-")
+        print(morse)
+        morse.remove(at: 0)
+        
+        for (index1,chars) in morse.enumerated(){
+            print(chars)
+            for (index2,char) in chars.enumerated(){
+                if char == "0"{
+                    //play
+                    delay(0.5*morseDelay) {
+                        print("On 0.5 Sec")
+                        self.toggleTorch(on: true)
+                    }
+                    morseDelay += stdDelay["dot"]!
+                    //pause
+                    delay(0.5*morseDelay) {
+                        print("Off 0.5 Sec")
+                        self.toggleTorch(on: false)
+                    }
+                    morseDelay += stdDelay["inEle"]!
                 }
-                if i == 10 {
-                    self.toggleTorch(on: false)
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseGen") as! MorseGen
-                    self.present(vc, animated: true, completion: nil)
+                if char == "1"{
+                    //play
+                    delay(0.5*morseDelay) {
+                        print("On 1.5 Sec")
+                        self.toggleTorch(on: true)
+                    }
+                    morseDelay += stdDelay["dash"]!
+                    //pause
+                    delay(0.5*morseDelay) {
+                        print("Off 0.5 Sec")
+                        self.toggleTorch(on: false)
+                    }
+                    morseDelay += stdDelay["inEle"]!
+                }
+
+                if index1 == (morse.count - 1)&&index2==(chars.count - 1){
+                    delay(0.25*morseDelay) {
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseGen") as! MorseGen
+                        self.present(vc, animated: true, completion: nil)
+                    }
                 }
             }
+            morseDelay += stdDelay["medGap"]!
         }
+        
+//        for i in 1...morseCode.count{
+//            delay(2 * Double(i)) {
+//                if (i % 2) == 0 {
+//                    print("On")
+//                    self.toggleTorch(on: true)
+//                }else{
+//                    print("Off")
+//                    self.toggleTorch(on: false)
+//                }
+//                if i == 10 {
+//                    self.toggleTorch(on: false)
+//                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "morseGen") as! MorseGen
+//                    self.present(vc, animated: true, completion: nil)
+//                }
+//            }
+//        }
         
         
         // Do any additional setup after loading the view.
     }
     func delay(_ delay:Double, closure:@escaping ()->()) {
+        print("Now delay \(morseDelay)")
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
@@ -45,10 +98,11 @@ class morseShow: UIViewController {
                 try device.lockForConfiguration()
                 
                 if on == true {
-                    device.torchMode = .on
+//                    device.torchMode = .on
                     UIScreen.main.brightness = CGFloat(1.0)
                     self.view.backgroundColor = UIColor.white
                 } else {
+//
                     device.torchMode = .off
                     UIScreen.main.brightness = CGFloat(0.1)
                     self.view.backgroundColor = UIColor.black
