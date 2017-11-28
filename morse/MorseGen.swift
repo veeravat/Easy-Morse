@@ -126,10 +126,19 @@ class MorseGen: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        if statusBar.responds(to: #selector(setter: UIView.backgroundColor)) {
+            statusBar.backgroundColor = UIColor.black
+            
+        }
+        UIApplication.shared.statusBarStyle = .lightContent
         TXT_input.text = TXT_inputR
         TXT_output.text = TXT_outputR
         self.reloadInputViews()
         
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 

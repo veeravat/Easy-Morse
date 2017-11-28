@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
         </scene>
-        <!--make-->
+        <!--read-->
         <scene sceneID="nHV-jL-sZn">
             <objects>
                 <viewController id="bms-Px-HId" sceneMemberID="viewController">
@@ -68,22 +68,22 @@
                         <viewControllerLayoutGuide type="bottom" id="Y3n-sE-DqB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fRn-FF-1kI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taptap.png" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-39-Hl1">
-                                <rect key="frame" x="14" y="141" width="385" height="393"/>
+                                <rect key="frame" x="14" y="141" width="385" height="329"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tap.png" translatesAutoresizingMaskIntoConstraints="NO" id="oWW-Xv-dev">
-                                <rect key="frame" x="22" y="151" width="370" height="374"/>
+                                <rect key="frame" x="22" y="151" width="370" height="310"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="make" image="pencil.png" badgeValue="soon" id="TMU-TD-mf6"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="read" image="pencil.png" badgeValue="soon" id="TMU-TD-mf6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnN-hp-ieD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +117,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hoT-YK-3US"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xcy-43-zVn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSf-12-A1N">
@@ -239,7 +239,8 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2NY-s8-7kF">
             <objects>
-                <tabBarController id="9XW-Hc-Z7W" sceneMemberID="viewController">
+                <tabBarController modalTransitionStyle="crossDissolve" id="9XW-Hc-Z7W" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="v74-Y8-w7Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -247,10 +248,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="rP7-Ht-YxR" kind="relationship" relationship="viewControllers" id="rY6-V8-IZb"/>
-                        <segue destination="bms-Px-HId" kind="relationship" relationship="viewControllers" id="fk2-2w-0B1"/>
                         <segue destination="Gmr-pr-cTP" kind="relationship" relationship="viewControllers" id="Pee-Be-2Jl"/>
-                        <segue destination="s81-BR-PgV" kind="relationship" relationship="viewControllers" id="wag-av-9f0"/>
                         <segue destination="Usc-jX-3ft" kind="relationship" relationship="viewControllers" id="HQS-ca-MEk"/>
+                        <segue destination="bms-Px-HId" kind="relationship" relationship="viewControllers" id="fk2-2w-0B1"/>
+                        <segue destination="s81-BR-PgV" kind="relationship" relationship="viewControllers" id="wag-av-9f0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9d-eV-TSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,7 +267,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Odn-6x-ide"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dqp-Me-F2G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRi-52-dXV">
@@ -351,7 +352,7 @@
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="game" image="gamepad.png" badgeValue="soon" id="fsQ-YI-ewn"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="game" image="gamepad.png" badgeValue="soon" id="fsQ-YI-ewn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BgD-ao-D31" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,10 +468,11 @@
             </objects>
             <point key="canvasLocation" x="2747.826086956522" y="928.53260869565224"/>
         </scene>
-        <!--learn-->
+        <!--Learn-->
         <scene sceneID="0Fc-ds-9oX">
             <objects>
-                <viewController id="Gmr-pr-cTP" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFI-TM-xSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Gmr-pr-cTP" customClass="learnViewController" customModule="morse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gMJ-PF-Mac"/>
                         <viewControllerLayoutGuide type="bottom" id="wwy-SK-6Gg"/>
@@ -491,19 +493,23 @@
                                     <navigationItem title="learn" id="EtO-IG-a2x"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="pic1" image="eng.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ua9-Kh-pPI">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iJ-Pz-5WE">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="learn" image="open-book.png" id="lsm-K7-Ugx"/>
-                    <navigationItem key="navigationItem" id="KFq-3J-MFd"/>
+                    <navigationItem key="navigationItem" title="Learn" id="KFq-3J-MFd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="offline" destination="4iJ-Pz-5WE" id="cfd-nD-LLi"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bFI-TM-xSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688.4057971014495" y="133.69565217391306"/>
         </scene>
@@ -532,7 +538,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eng.jpg" width="800" height="2100"/>
         <image name="gamepad.png" width="24" height="24"/>
         <image name="morse-code-2.png" width="24" height="24"/>
         <image name="morse.png" width="1200" height="400"/>
