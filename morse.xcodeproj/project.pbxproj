@@ -14,6 +14,16 @@
 		A1A6EAAC1FC47CC60098B132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A6EAAA1FC47CC60098B132 /* Main.storyboard */; };
 		A1A6EAAE1FC47CC60098B132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A6EAAD1FC47CC60098B132 /* Assets.xcassets */; };
 		A1A6EAB11FC47CC60098B132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A6EAAF1FC47CC60098B132 /* LaunchScreen.storyboard */; };
+		A1A9A7A11FCD09DC00F2E550 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7A01FCD09DC00F2E550 /* tap.png */; };
+		A1A9A7A51FCD0CBD00F2E550 /* morse-code-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7A41FCD0CBD00F2E550 /* morse-code-2.png */; };
+		A1A9A7A71FCD0D8100F2E550 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7A61FCD0D8100F2E550 /* pencil.png */; };
+		A1A9A7A91FCD0D8600F2E550 /* open-book.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7A81FCD0D8600F2E550 /* open-book.png */; };
+		A1A9A7AB1FCD0D8A00F2E550 /* gamepad.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7AA1FCD0D8A00F2E550 /* gamepad.png */; };
+		A1A9A7AF1FCD236100F2E550 /* eng.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7AC1FCD236100F2E550 /* eng.jpg */; };
+		A1A9A7B01FCD236100F2E550 /* thai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7AD1FCD236100F2E550 /* thai.jpg */; };
+		A1A9A7B11FCD236100F2E550 /* thai2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1A9A7AE1FCD236100F2E550 /* thai2.jpg */; };
+		A1A9E0A11FCD0535001AD68D /* morse.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9E09A1FCD0535001AD68D /* morse.png */; };
+		A1A9E0A51FCD0535001AD68D /* taptap.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A9E09E1FCD0535001AD68D /* taptap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		A1A6EAAD1FC47CC60098B132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1A6EAB01FC47CC60098B132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A6EAB21FC47CC60098B132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A9A7A01FCD09DC00F2E550 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
+		A1A9A7A41FCD0CBD00F2E550 /* morse-code-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "morse-code-2.png"; sourceTree = "<group>"; };
+		A1A9A7A61FCD0D8100F2E550 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		A1A9A7A81FCD0D8600F2E550 /* open-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open-book.png"; sourceTree = "<group>"; };
+		A1A9A7AA1FCD0D8A00F2E550 /* gamepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gamepad.png; sourceTree = "<group>"; };
+		A1A9A7AC1FCD236100F2E550 /* eng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eng.jpg; sourceTree = "<group>"; };
+		A1A9A7AD1FCD236100F2E550 /* thai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai.jpg; sourceTree = "<group>"; };
+		A1A9A7AE1FCD236100F2E550 /* thai2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai2.jpg; sourceTree = "<group>"; };
+		A1A9E09A1FCD0535001AD68D /* morse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morse.png; sourceTree = "<group>"; };
+		A1A9E09E1FCD0535001AD68D /* taptap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taptap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		A1A6EAA51FC47CC60098B132 /* morse */ = {
 			isa = PBXGroup;
 			children = (
+				A1A9E0971FCD0504001AD68D /* img */,
 				A1A6EAA61FC47CC60098B132 /* AppDelegate.swift */,
 				A1A6EAA81FC47CC60098B132 /* ViewController.swift */,
 				A1A6EAAA1FC47CC60098B132 /* Main.storyboard */,
@@ -68,6 +89,23 @@
 				A1A6EAB21FC47CC60098B132 /* Info.plist */,
 			);
 			path = morse;
+			sourceTree = "<group>";
+		};
+		A1A9E0971FCD0504001AD68D /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A1A9E09A1FCD0535001AD68D /* morse.png */,
+				A1A9A7AC1FCD236100F2E550 /* eng.jpg */,
+				A1A9A7AD1FCD236100F2E550 /* thai.jpg */,
+				A1A9A7AE1FCD236100F2E550 /* thai2.jpg */,
+				A1A9A7A01FCD09DC00F2E550 /* tap.png */,
+				A1A9A7A61FCD0D8100F2E550 /* pencil.png */,
+				A1A9A7AA1FCD0D8A00F2E550 /* gamepad.png */,
+				A1A9A7A81FCD0D8600F2E550 /* open-book.png */,
+				A1A9A7A41FCD0CBD00F2E550 /* morse-code-2.png */,
+				A1A9E09E1FCD0535001AD68D /* taptap.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +169,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A9A7AF1FCD236100F2E550 /* eng.jpg in Resources */,
+				A1A9A7B01FCD236100F2E550 /* thai.jpg in Resources */,
+				A1A9A7A71FCD0D8100F2E550 /* pencil.png in Resources */,
+				A1A9A7A91FCD0D8600F2E550 /* open-book.png in Resources */,
+				A1A9A7A51FCD0CBD00F2E550 /* morse-code-2.png in Resources */,
+				A1A9A7A11FCD09DC00F2E550 /* tap.png in Resources */,
 				A1A6EAB11FC47CC60098B132 /* LaunchScreen.storyboard in Resources */,
+				A1A9A7AB1FCD0D8A00F2E550 /* gamepad.png in Resources */,
+				A1A9E0A11FCD0535001AD68D /* morse.png in Resources */,
+				A1A9A7B11FCD236100F2E550 /* thai2.jpg in Resources */,
 				A1A6EAAE1FC47CC60098B132 /* Assets.xcassets in Resources */,
 				A1A6EAAC1FC47CC60098B132 /* Main.storyboard in Resources */,
+				A1A9E0A51FCD0535001AD68D /* taptap.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,20 +23,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXg-dB-8M2">
                                 <rect key="frame" x="23" y="23" width="328" height="620"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s0h-8g-rwz">
                                         <rect key="frame" x="4" y="4" width="320" height="613"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="3Lb-Aq-0xS">
                                                 <rect key="frame" x="85" y="333" width="150" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </progressView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Np9-XT-W1T">
-                                                <rect key="frame" x="40" y="173" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v.1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5L-0L-JEk">
                                                 <rect key="frame" x="259" y="584" width="47" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -44,6 +40,10 @@
                                                 <color key="textColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="morse.png" translatesAutoresizingMaskIntoConstraints="NO" id="Np9-XT-W1T">
+                                                <rect key="frame" x="40" y="197" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.9994240403175354" green="0.83382803288275542" blue="0.23539937998896066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,15 +71,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-39-Hl1">
-                                <rect key="frame" x="41" y="136" width="292" height="274"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taptap.png" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-39-Hl1">
+                                <rect key="frame" x="14" y="141" width="346" height="324"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tap.png" translatesAutoresizingMaskIntoConstraints="NO" id="oWW-Xv-dev">
+                                <rect key="frame" x="22" y="151" width="331" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="make" id="TMU-TD-mf6"/>
+                    <tabBarItem key="tabBarItem" title="make" image="pencil.png" id="TMU-TD-mf6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnN-hp-ieD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +198,7 @@
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="translate" id="iWs-zy-EtW"/>
+                    <tabBarItem key="tabBarItem" title="translate" image="morse-code-2.png" id="iWs-zy-EtW"/>
                     <connections>
                         <outlet property="TXT_input" destination="1Rd-Qh-lWh" id="BI0-l7-pHf"/>
                         <outlet property="TXT_output" destination="QEx-Br-XcI" id="4VR-hT-W4t"/>
@@ -320,7 +324,7 @@
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="game" id="fsQ-YI-ewn"/>
+                    <tabBarItem key="tabBarItem" title="game" image="gamepad.png" id="fsQ-YI-ewn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BgD-ao-D31" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -403,34 +407,23 @@
                                     <navigationItem title="learn" id="EtO-IG-a2x"/>
                                 </items>
                             </navigationBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yeK-bv-Xsi">
-                                <rect key="frame" x="40" y="89" width="297" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="thai"/>
-                                    <segment title="english"/>
-                                </segments>
-                            </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-NX-L8g">
-                                <rect key="frame" x="0.0" y="140" width="375" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NXf-fs-idv">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NXf-fs-idv" id="M2g-eg-yMx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="pic2" translatesAutoresizingMaskIntoConstraints="NO" id="F2z-jj-Hej">
+                                <rect key="frame" x="0.0" y="238" width="375" height="142"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="pic1" translatesAutoresizingMaskIntoConstraints="NO" id="ua9-Kh-pPI">
+                                <rect key="frame" x="0.0" y="88" width="375" height="142"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKc-kS-1Tb">
+                                <rect key="frame" x="0.0" y="388" width="375" height="142"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.21913455309999999" green="0.21913455309999999" blue="0.21913455309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.99942404029999998" green="0.83382803289999996" blue="0.23539937999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="learn" id="lsm-K7-Ugx"/>
+                    <tabBarItem key="tabBarItem" title="learn" image="open-book.png" id="lsm-K7-Ugx"/>
                     <navigationItem key="navigationItem" id="KFq-3J-MFd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -439,4 +432,13 @@
             <point key="canvasLocation" x="1688.8" y="134.48275862068968"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gamepad.png" width="24" height="24"/>
+        <image name="morse-code-2.png" width="24" height="24"/>
+        <image name="morse.png" width="1200" height="400"/>
+        <image name="open-book.png" width="24" height="24"/>
+        <image name="pencil.png" width="24" height="24"/>
+        <image name="tap.png" width="1000" height="1000"/>
+        <image name="taptap.png" width="1000" height="1000"/>
+    </resources>
 </document>
